@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiptoe Tabby — step lightly, the floor is still wet</title>
+<meta name="description" content="An iPhone game: guide a tabby cat on two knitting needles across a freshly mopped room, stepping only on things that stay dry. 60 short levels, no ads, plays offline.">
+<link rel="canonical" href="https://nguyenvanlamm.github.io/tiptoe-tabby-site/">
+<link rel="icon" href="assets/favicon.png">
+<meta property="og:title" content="Tiptoe Tabby">
+<meta property="og:description" content="Step lightly. The floor is still wet. A calm skill game for iPhone.">
+<meta property="og:url" content="https://nguyenvanlamm.github.io/tiptoe-tabby-site/">
+<meta property="og:image" content="https://nguyenvanlamm.github.io/tiptoe-tabby-site/assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Gabarito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --wall:#FBE5D6; --stripe:#F5D5C1; --paper:#FEF5EC; --ink:#222F3C; --soft:#4C5A69; --honey:#DB9C55; --honey-d:#B6753B; --floor:#A4BCC6; --floor-d:#486878; --mint:#A0E1C8; --pink:#F3B4BC; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:Gabarito, system-ui, sans-serif; color:var(--ink); font-size:17px; line-height:1.55;
+    background: repeating-linear-gradient(90deg, var(--wall) 0 20px, var(--stripe) 20px 21.5px); }
+  a { color:var(--ink); }
+  a:focus-visible, .cta:focus-visible { outline:3px solid var(--ink); outline-offset:3px; }
+  header, main, footer { max-width:980px; margin:0 auto; padding:0 20px; }
+  .top { display:flex; align-items:center; gap:12px; padding:20px 0; }
+  .top img { width:48px; height:48px; border-radius:12px; border:2px solid var(--ink); }
+  .top span { font-family:Calistoga, Georgia, serif; font-size:22px; }
+  .hero { display:grid; grid-template-columns: 1.1fr .9fr; gap:32px; align-items:center; padding:24px 0 40px; }
+  h1, h2, h3 { font-family:Calistoga, Georgia, serif; font-weight:400; line-height:1.1; margin:0 0 12px; }
+  h1 { font-size: clamp(40px, 7vw, 64px); }
+  h2 { font-size: 34px; margin-top: 8px; }
+  h3 { font-size: 24px; }
+  .sub { font-size:20px; color:var(--soft); max-width:34ch; }
+  .cta { display:inline-flex; align-items:center; gap:10px; min-height:52px; padding:12px 22px; margin-top:18px; border:2.4px solid var(--ink);
+    border-bottom-width:8px; border-radius:20px; background:var(--honey); font-weight:800; font-size:18px; text-decoration:none; }
+  .cta small { font-weight:500; }
+  .note { font-size:15px; color:var(--soft); margin-top:10px; }
+  .shot { width:100%; max-width:330px; justify-self:center; border:2.4px solid var(--ink); border-radius:28px; box-shadow:0 6px 0 var(--ink); background:var(--paper); }
+  .floor { background:linear-gradient(var(--floor), var(--floor-d)); border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); padding:40px 0; margin:12px 0 40px; }
+  .floor h2 { color:var(--paper); }
+  .cards { display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; }
+  .card { background:var(--paper); border:2px solid var(--ink); border-radius:20px; box-shadow:0 4px 0 var(--ink); padding:20px; }
+  .card p { margin:0; }
+  .steps { display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; counter-reset:step; }
+  .step { background:var(--paper); border:2px solid var(--ink); border-radius:20px; padding:18px; }
+  .step::before { counter-increment:step; content:counter(step); display:inline-grid; place-items:center; width:36px; height:36px; border-radius:10px;
+    border:2px solid var(--ink); background:var(--mint); font-weight:800; margin-bottom:8px; }
+  .gallery { display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; margin:20px 0 40px; }
+  .gallery img { width:100%; border:2px solid var(--ink); border-radius:22px; background:var(--paper); }
+  details { background:var(--paper); border:2px solid var(--ink); border-radius:16px; padding:14px 18px; margin-bottom:12px; }
+  summary { font-weight:800; cursor:pointer; min-height:28px; }
+  section { margin-bottom:40px; }
+  footer { padding:28px 20px 48px; color:var(--soft); font-size:15px; }
+  footer a { margin-right:18px; }
+  @media (max-width: 760px) {
+    .hero, .cards, .steps, .gallery { grid-template-columns:1fr; }
+    .shot { max-width:280px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="top"><img src="assets/icon.png" alt="Tiptoe Tabby app icon"><span>Tiptoe Tabby</span></div>
+</header>
+<main>
+  <section class="hero">
+    <div>
+      <h1>Step lightly. The floor is still wet.</h1>
+      <p class="sub">Guide a tabby on two knitting needles across a freshly mopped room, one careful stride at a time, and only on things that stay dry.</p>
+      <a class="cta" href="#download" id="download">Download on the App Store <small>(coming soon)</small></a>
+      <p class="note">iPhone · 20 levels free · no ads · plays offline</p>
+    </div>
+    <img class="shot" src="assets/game.webp" alt="The tabby stands on two knitting needles over a wet floor, between a plate stack and a robot vacuum" width="390" height="844">
+  </section>
+</main>
+
+<div class="floor">
+  <main>
+    <h2>Every step is a choice</h2>
+    <div class="cards">
+      <div class="card"><h3>Everything behaves</h3><p>Books hold still. Cushions squash if you linger. Plates break after one step. The robot vacuum will not wait, and the dog does not stay asleep.</p></div>
+      <div class="card"><h3>Short levels, real skill</h3><p>60 levels across the Living Room, the Kitchen and the Laundry Room, most under a minute. Walk one in par steps to earn three paw prints.</p></div>
+      <div class="card"><h3>Calm and fair</h3><p>No ads, no account, no tracking. The Living Room is free; one purchase opens the other two rooms for good.</p></div>
+    </div>
+  </main>
+</div>
+
+<main>
+  <section>
+    <h2>How to play</h2>
+    <div class="steps">
+      <div class="step"><p><strong>Drag anywhere</strong> to swing the back needle forward. Further drag, longer stride.</p></div>
+      <div class="step"><p><strong>Let go</strong> to put it down on something dry: a book, a cushion, the cat bed at the end.</p></div>
+      <div class="step"><p><strong>Lean too far or touch the floor</strong> and it is wet paws. Try again, or use a Rewind.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>A look inside</h2>
+    <div class="gallery">
+      <img src="assets/home.webp" alt="Home screen: the level map, twenty tiles on a strand of yarn" width="390" height="844" loading="lazy">
+      <img src="assets/game.webp" alt="A level in the kitchen: plates, a robot vacuum and books over the wet floor" width="390" height="844" loading="lazy">
+      <img src="assets/shop.webp" alt="The shop: All Rooms, booster packs, yarn trades and cat outfits" width="390" height="844" loading="lazy">
+    </div>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <details><summary>Is it free?</summary><p>The Living Room, 20 levels, is free. "All Rooms" is a one-time purchase that opens the Kitchen and the Laundry Room, 40 more levels. Booster packs are optional; you also earn boosters and yarn by playing.</p></details>
+    <details><summary>Are there ads?</summary><p>No. There are no ads of any kind.</p></details>
+    <details><summary>What data does the game collect?</summary><p>None. Your progress stays on your iPhone. There is no account and no analytics. Read the <a href="privacy.html">privacy policy</a>.</p></details>
+    <details><summary>Do I need an internet connection?</summary><p>No. You only need it to buy or restore a purchase.</p></details>
+    <details><summary>Which devices?</summary><p>iPhone. Bought something before? Use Settings → Restore Purchases.</p></details>
+  </section>
+</main>
+
+<footer>
+  <a href="support.html">Support</a><a href="privacy.html">Privacy</a>
+  <p>© 2026 Tiptoe Tabby. Made with care for cats who hate wet paws.</p>
+</footer>
+</body>
+</html>
