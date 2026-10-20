@@ -1,0 +1,15 @@
+# Tiptoe Tabby
+
+> Tiptoe Tabby is a calm physics puzzle game for iPhone (iOS 15 or later). A tabby cat walks on two knitting needles across a freshly mopped floor and may only set a needle down on household objects; touch the wet floor or lean too far and it is wet paws. Coming soon to the App Store.
+
+- 60 short levels in three rooms: the Living Room (20 levels, free), the Kitchen and the Laundry Room. Most levels take under a minute; walk one in par steps to earn three paw prints.
+- Objects behave differently: books hold still, cushions squash if you linger, plates break after one step, the robot vacuum will not wait, and the dog does not stay asleep.
+- How to play: drag anywhere to swing the back needle forward (a longer drag is a longer stride), then let go to put it down on something dry. Rewind puts the cat back after a fall; Steady slows time for six seconds.
+- Purchases: "All Rooms" is a one-time in-app purchase that opens the Kitchen and the Laundry Room (40 more levels). Booster packs are optional; boosters and yarn are also earned by playing. Restore Purchases is in Settings.
+- No ads, no account, no analytics or tracking. Progress stays on the iPhone. The game plays offline; a connection is needed only to buy or restore a purchase. The game is in English.
+
+## Pages
+
+- [Home](https://nguyenvanlamm.github.io/tiptoe-tabby-site/): what the game is, how to play, screenshots and questions
+- [Support](https://nguyenvanlamm.github.io/tiptoe-tabby-site/support.html): contact (lamnv260398@gmail.com), how to play, purchases and restoring them, progress
+- [Privacy Policy](https://nguyenvanlamm.github.io/tiptoe-tabby-site/privacy.html): what the game stores on the iPhone and what it never collects

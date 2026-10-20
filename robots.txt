@@ -1,2 +1,37 @@
+# Tiptoe Tabby site: all crawlers welcome, including search and AI bots.
+# Crawlers read robots.txt only at the host root (https://nguyenvanlamm.github.io/robots.txt);
+# keep that file's Sitemap line for this site in step with the one below.
 User-agent: *
 Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://nguyenvanlamm.github.io/tiptoe-tabby-site/sitemap.xml
